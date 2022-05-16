@@ -35,16 +35,20 @@ body{
     color: #96a3a9;
 }
 ul{
+    list-style-type: none; 
+}
+.ul_container{
     width: 80px;
     height: 100vh;
     padding-top: 100px;
     padding-left: 25px;
-    list-style-type: none; 
+    
 }
 ul li{
     width: 200px;
+    height: fit-content;
     display: inline-flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     min-height: 40px;
     padding-left: 5px;
 }
@@ -52,31 +56,48 @@ ul li i{
     margin-right:40px;
     transition:0.4s;
     font-size:25px;
-    color: #777c7d;
+    color: #6e6e6e;
+    margin-right:30px ;
+    size: 10vw;
 }
-ul li span{
-    color:#777c7d;
-}
- ul li:hover span{
-   color:#f20c70;
-   transform: scale(1.2);
-   font-weight: bold;
-   transition:0.3s;
-}
+.ul_container li:hover .span_manager,.ul_container .li_render:hover span{
+    color:#f20c70;
+    font-weight: bold;
+    transition:0.3s;
+ }
 
-ul li i:hover{
+ 
+
+
+ ul li{
+    align-items: center;
+ }
+ ul li i:hover{
     color: #f20c70;
     transform: scale(1.3);
 }
+
 #active_side:hover{
     color:#f20c70;
     transform: scale(1.5);
     transition:0.4s;
 }
+.manage_list{
+   display: none;
+   margin-top: 10px;
+   margin-left: 20px;
+}
+.manage_list a{
+    display: block;
+    color: rgb(124, 124, 124);
+ }
+ .manage_list a :hover{
+     color: #161616;
+ }
 .sidebar.active_menu{
-   width: 310px;
+    width: 310px;
+ }
+.manager_container{
+    display: block;
 }
-#search_fill{
-    padding-left: 2em;
-    transition: 0.3;
-}
+ 
